@@ -106,7 +106,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       bottomNavigationBar: Padding(
-        padding: const EdgeInsets.fromLTRB(16, 0, 16, 16),
+        padding: const EdgeInsets.fromLTRB(16, 0, 16, 20),
         child: BlocBuilder<BillingBloc, BillingState>(
           builder: (context, state) {
             return PrimaryButton(

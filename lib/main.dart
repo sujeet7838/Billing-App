@@ -1,3 +1,4 @@
+import 'package:billing_app/features/login/bloc/auth_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'config/routes/app_routes.dart';
@@ -11,6 +12,12 @@ import 'features/settings/presentation/bloc/printer_bloc.dart';
 import 'features/settings/presentation/bloc/printer_event.dart';
 
 void main() async {
+  //  runApp(
+  //   BlocProvider(
+  //     create: (_) => AuthBloc(),
+  //     child: const MyApp(),
+  //   ),
+  // );
   WidgetsFlutterBinding.ensureInitialized();
   await HiveDatabase.init();
   await di.init();
